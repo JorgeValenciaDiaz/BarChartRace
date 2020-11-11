@@ -1,0 +1,14 @@
+pip install pandas
+import pandas as pd
+pip install matplotlib
+import matplotlib as mtp
+pip install xlrd
+import xlrd as xlrd
+pip install bar_chart_race
+import bar_chart_race as bcr
+from google.colab import files
+files.upload()
+xlsx = pd.ExcelFile("DataPython.xlsx")
+print(xlsx.sheet_names)
+bd = xlsx.parse("Hoja1")
+print(bd)
